@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^images/.*\.(php|rb|py)$ - [F,L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/?([^/]+)/?$ common/default.php?action=$1 [L]
+RewriteRule ^room/?([^/]+)/?$ common/routes/view_room.php?nama_room=$1 [L]

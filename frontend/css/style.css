@@ -1,0 +1,152 @@
+@import url("../font-awesome/css/font-awesome.min.css");
+@import url("bootstrap.min.css");
+/*@import url("animate.css");*/
+@import url("demo.css");
+
+body {
+	background:url("../../images/background.jpg") repeat;
+	background-repeat:repeat;
+	background-position:fixed;
+}
+
+#is-container {
+	padding-top:60px;
+}
+
+#user-online  {
+	margin-top:5px;
+	height:60px;
+	overflow-y:auto;
+}
+
+.room-chat {
+	margin-bottom:15px;
+	border:1px solid transparent;
+}
+
+.member-online{
+	width:auto !important;
+	overflow:auto;
+	color:#000;
+	margin:10px;
+}
+
+.member-online img{
+	width:40px;
+	height:40px;
+}
+
+#my-room {
+	margin:20px;
+	border:1px solid transparent;
+}
+
+.is-button {
+	margin-bottom:15px;
+}
+
+#hidden {
+	display:none;
+}
+
+#progress-bar {
+	position:fixed;
+	z-index:9999;
+	.top:0;
+	left:0;
+	bottom:0;
+	width:0;
+	height:2px;
+	background-color:#000;
+}
+
+#loading {
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	.background:#fff url(../../images/loading.gif) center no-repeat;
+	background:#fff url(../../common/emoticon/priv4/neptunus.gif) center no-repeat;
+}
+
+.fixed-bar {
+	top:0;
+	left:0;
+	position:fixed !important;
+	width:100%;
+	height:20px;
+	padding-right:250px;
+	background-color:#337ab7;
+}
+
+.button-room {
+	background:#9bffed;
+	margin-bottom:7px;
+	border:1px solid transparent;
+}
+
+.this-room {
+	margin-bottom:10px;
+	padding:0;
+}
+
+/* Chatting Section */
+#msgs {
+	margin-top:15px;
+}
+
+.is-room {
+	margin-top:20px;
+	height:400px;
+	overflow-x:auto;
+	width:auto;
+}
+
+.bubble-left,
+.bubble-right {
+    line-height: 100%;
+    display: block;
+    position: relative;
+    padding: .5em;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    margin-bottom: 1.5em;
+    clear: both;
+    max-width:80%;
+}
+
+p{
+    margin: 0;
+}
+
+.bubble {
+	font-size:70%;
+}
+
+.bubble-left {
+    float: left;
+    margin-right:10%;
+    background: #fff;
+}
+
+.bubble-right {
+    float:right;
+    margin-left:10%;
+    .background: #DDFFBA;
+	background: #fff;
+}
+
+.chat-input {
+	display:inline;
+}
+
+.chat {
+	margin-top:9px;
+}
+
+.version {
+	padding-right:17px;
+}
